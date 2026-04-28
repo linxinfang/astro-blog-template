@@ -1,0 +1,10 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Services | YALF Inc." description="Our services">
+  <main class="container">
+    <h1>Services</h1>
+    <p>We support supplier sourcing, trade structuring, market coordination, and execution support.</p>
+  </main>
+</Layout>
