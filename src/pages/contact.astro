@@ -1,0 +1,41 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "Contact Us";
+const description = "Contact YALF Inc.";
+const permalink = `${Astro.site.href}contact`;
+---
+
+<BaseLayout title={title} description={description} permalink={permalink} current="contact">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <form method="POST" action="/api/contact" class="contact-form">
+      <label>
+        Name
+        <input type="text" name="name" required />
+      </label>
+
+      <label>
+        Company
+        <input type="text" name="company" />
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" required />
+      </label>
+
+      <label>
+        Phone
+        <input type="text" name="phone" />
+      </label>
+
+      <label>
+        Message
+        <textarea name="message" rows="6" required></textarea>
+      </label>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</BaseLayout>
