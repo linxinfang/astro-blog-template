@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "Message Sent";
+const description = "Your message has been sent.";
+const permalink = `${Astro.site.href}contact-success`;
+---
+
+<BaseLayout title={title} description={description} permalink={permalink}>
+  <div class="container">
+    <h1>Thank you</h1>
+    <p>Your message has been sent successfully. We will get back to you shortly.</p>
+  </div>
+</BaseLayout>
