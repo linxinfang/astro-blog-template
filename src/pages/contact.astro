@@ -9,6 +9,9 @@ const permalink = `${Astro.site.href}contact`;
 <BaseLayout title={title} description={description} permalink={permalink} current="contact">
   <div class="container">
     <h1>Contact Us</h1>
+
+    <p> We would be gald to hear from you!</p>
+
     <form method="POST" action="/api/contact" class="contact-form">
       <label>
         Name
